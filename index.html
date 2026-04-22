@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smulshi – Gemakkelijk, begrijpelijk en verrukkelijk</title>
+  <meta name="description" content="Smulshi biedt verse sushi, pokébowls en sushi-catering op maat door heel Zuid-Holland. Bestel online of vraag catering aan." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── Loader ─────────────────────────────── -->
+  <div id="loader">
+    <div class="loader-inner">
+      <img src="images/Logo_Smulshi_Kleur-scaled.jpg" alt="Smulshi" class="loader-logo-img" />
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- ── Custom Cursor ──────────────────────── -->
+  <div id="cursor"></div>
+  <div id="cursor-follower"></div>
+
+  <!-- ── Scroll Progress ────────────────────── -->
+  <div id="scroll-progress"></div>
+
+  <!-- ── Navigation ────────────────────────── -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <img src="images/Logo_Smulshi_Kleur-scaled.jpg" alt="Smulshi" class="nav-logo-img" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="#bestel" class="nav-link">Bestel</a></li>
+        <li><a href="#catering" class="nav-link">Catering</a></li>
+        <li><a href="#sushi-boot" class="nav-link">Sushi boot/brug</a></li>
+        <li><a href="#overons" class="nav-link">OverOns</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#vacatures" class="nav-link">Vacatures</a></li>
+      </ul>
+      <a href="#bestel" class="nav-cta">Bestel</a>
+      <button class="nav-burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="mobileMenu">
+      <a href="#bestel" class="mobile-link">Bestel</a>
+      <a href="#catering" class="mobile-link">Catering</a>
+      <a href="#sushi-boot" class="mobile-link">Sushi boot/brug</a>
+      <a href="#overons" class="mobile-link">OverOns</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+      <a href="#vacatures" class="mobile-link">Vacatures</a>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 1 — HOME
+  ══════════════════════════════════════════ -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <img src="images/IMG_1735.jpg" alt="Smulshi sushi" class="hero-bg-img" />
+      <div class="hero-overlay"></div>
+      <div class="hero-gradient"></div>
+    </div>
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-rings">
+      <div class="ring ring-1"></div>
+      <div class="ring ring-2"></div>
+      <div class="ring ring-3"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-badge reveal-up">
+        <span class="badge-dot"></span>
+        Dagelijks vers bereid
+      </div>
+      <h1 class="hero-title">
+        <span class="title-line reveal-up delay-1">Welkom op</span>
+        <span class="title-line title-accent reveal-up delay-2">onze website!</span>
+      </h1>
+      <p class="hero-sub reveal-up delay-3">
+        Wat fijn dat je hier bent! Wij zijn Smulshi en we streven ernaar om jou de beste producten te bieden.
+      </p>
+      <div class="hero-tagline reveal-up delay-4">
+        <span class="tagline-pill">Gemakkelijk</span>
+        <span class="tagline-sep">·</span>
+        <span class="tagline-pill">Begrijpelijk</span>
+        <span class="tagline-sep">·</span>
+        <span class="tagline-pill">Verrukkelijk</span>
+      </div>
+      <div class="hero-actions reveal-up delay-5">
+        <a href="#bestel" class="btn-primary">
+          Bestel nu
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn-ghost">Bekijk onze afhaalpunten</a>
+      </div>
+      <div class="hero-stats reveal-up delay-6">
+        <div class="stat">
+          <span class="stat-number" data-target="5">0</span>
+          <span class="stat-label">Afhaallocaties</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" data-target="100">0</span><span class="stat-suffix">%</span>
+          <span class="stat-label">Verse ingrediënten</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" data-target="250">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Personen catering</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <div class="marquee-content">
+        <span>Verse Sushi</span><span class="marquee-dot">✦</span>
+        <span>Pokébowls</span><span class="marquee-dot">✦</span>
+        <span>Sushi Catering</span><span class="marquee-dot">✦</span>
+        <span>Sushi Boot & Brug</span><span class="marquee-dot">✦</span>
+        <span>Live Cooking</span><span class="marquee-dot">✦</span>
+        <span>Halal & Alcoholvrij</span><span class="marquee-dot">✦</span>
+        <span>Heel Zuid-Holland</span><span class="marquee-dot">✦</span>
+        <span>Verse Sushi</span><span class="marquee-dot">✦</span>
+        <span>Pokébowls</span><span class="marquee-dot">✦</span>
+        <span>Sushi Catering</span><span class="marquee-dot">✦</span>
+        <span>Sushi Boot & Brug</span><span class="marquee-dot">✦</span>
+        <span>Live Cooking</span><span class="marquee-dot">✦</span>
+        <span>Halal & Alcoholvrij</span><span class="marquee-dot">✦</span>
+        <span>Heel Zuid-Holland</span><span class="marquee-dot">✦</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Home preview cards -->
+  <div class="home-previews">
+    <div class="container">
+      <div class="previews-grid">
+
+        <div class="preview-card reveal-up">
+          <div class="preview-img-wrap">
+            <img src="images/IMG_1735-1-1024x646.jpg" alt="Sushi boot" loading="lazy" />
+            <div class="preview-img-overlay"></div>
+          </div>
+          <div class="preview-body">
+            <div class="preview-eyebrow">Unieke ervaring</div>
+            <h2>Ontdek onze boot!</h2>
+            <p>Huur een Sushi Boot of Sushi Brug – Een unieke culinaire ervaring! Breng een vleugje Japanse elegantie naar jouw feest of evenement.</p>
+            <a href="#sushi-boot" class="preview-link">
+              Ontdek Meer
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="preview-card reveal-up delay-1">
+          <div class="preview-img-wrap">
+            <img src="images/IMG_0133-1024x548.jpg" alt="Catering" loading="lazy" />
+            <div class="preview-img-overlay"></div>
+          </div>
+          <div class="preview-body">
+            <div class="preview-eyebrow">Op maat</div>
+            <h2>Bekijk onze catering</h2>
+            <p>Op zoek naar sushi-catering die indruk maakt? Wij verzorgen complete sushi- en pokébowlcatering op maat voor elk evenement.</p>
+            <a href="#catering" class="preview-link">
+              Ontdek Meer
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="preview-card reveal-up delay-2">
+          <div class="preview-img-wrap">
+            <img src="images/IMG_1186-1024x749.jpg" alt="Contact" loading="lazy" />
+            <div class="preview-img-overlay"></div>
+          </div>
+          <div class="preview-body">
+            <div class="preview-eyebrow">We staan klaar</div>
+            <h2>Neem contact met ons op</h2>
+            <p>We staan voor je klaar! Heb je vragen, opmerkingen of wil je meer informatie over onze producten/diensten?</p>
+            <a href="#contact" class="preview-link">
+              Contactgegevens
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Daily sushi CTA banner -->
+  <div class="daily-banner">
+    <div class="container daily-banner-inner">
+      <div class="daily-text">
+        <p class="daily-title">Proef onze verrukkelijke sushi dagelijks!!</p>
+        <p class="daily-sub">Verse pokébowls, california rolls en meer — bestel vandaag nog.</p>
+      </div>
+      <a href="#bestel" class="btn-primary">Bestel hier</a>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 2 — BESTEL (placeholder/order portal)
+  ══════════════════════════════════════════ -->
+  <section id="bestel" class="bestel-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow reveal-up">Online bestellen</div>
+        <h2 class="section-title reveal-up delay-1">Bestel<br /><em>jouw favoriete sushi</em></h2>
+        <p class="section-sub reveal-up delay-2">
+          Via de bestelknop selecteer je de producten die je lekker vindt. Wanneer je klaar bent, klik je op de winkelwagen en doorloop je de stappen. Vergeet niet je e-mailadres in te vullen — via dit adres ontvang je de bevestiging en kun je jouw bestelling ophalen.
+        </p>
+      </div>
+      <div class="bestel-info-grid">
+        <div class="bestel-step reveal-up">
+          <div class="step-num">01</div>
+          <h3>Selecteer producten</h3>
+          <p>Kies uit ons uitgebreide aanbod van sushi, pokébowls en specialiteiten.</p>
+        </div>
+        <div class="bestel-step reveal-up delay-1">
+          <div class="step-num">02</div>
+          <h3>Vul je gegevens in</h3>
+          <p>Vergeet niet je e-mailadres in te vullen — hierop ontvang je de bevestiging.</p>
+        </div>
+        <div class="bestel-step reveal-up delay-2">
+          <div class="step-num">03</div>
+          <h3>Haal op & betaal</h3>
+          <p>Neem de bevestigingsmail mee naar de afhaallocatie en reken daar af.</p>
+        </div>
+      </div>
+      <div class="bestel-locations reveal-up delay-3">
+        <h3 class="locations-title">📍 Afhaallocaties</h3>
+        <div class="locations-grid">
+          <div class="location-item">
+            <div class="location-store">Jumbo</div>
+            <div class="location-address">Jacob van den Eyndestraat 14<br />2274 VZ Voorburg</div>
+          </div>
+          <div class="location-item">
+            <div class="location-store">SPAR</div>
+            <div class="location-address">Westvest 1<br />2611 AX Delft</div>
+          </div>
+          <div class="location-item">
+            <div class="location-store">PLUS</div>
+            <div class="location-address">Prinses Irenelaan 330<br />2285 GD Rijswijk</div>
+          </div>
+          <div class="location-item">
+            <div class="location-store">SPAR</div>
+            <div class="location-address">Voorschoterlaan 10<br />3062 KN Rotterdam</div>
+          </div>
+          <div class="location-item">
+            <div class="location-store">SPAR</div>
+            <div class="location-address">Stationsplein 4<br />3112 HJ Schiedam</div>
+          </div>
+        </div>
+      </div>
+      <div class="bestel-cta reveal-up">
+        <a href="https://smulshi.nl/shopcategory/" target="_blank" rel="noopener" class="btn-primary btn-large">
+          Bestel nu op smulshi.nl
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 3 — CATERING
+  ══════════════════════════════════════════ -->
+  <section id="catering" class="catering-section">
+    <div class="catering-hero-img">
+      <img src="images/IMG_1774-scaled.jpeg" alt="Smulshi Catering" loading="lazy" />
+      <div class="catering-hero-overlay"></div>
+      <div class="catering-hero-text">
+        <div class="section-eyebrow" style="color:#c9a96e">Smulshi Diensten</div>
+        <h2>Catering</h2>
+        <p>Onze sushi-arrangementen worden met zorg samengesteld door onze chefs en gepresenteerd op authentieke houten boten of bruggen.</p>
+      </div>
+    </div>
+    <div class="container">
+
+      <!-- What to expect -->
+      <div class="catering-expect">
+        <div class="catering-expect-text reveal-left">
+          <div class="section-eyebrow">🥢 Wat mag je verwachten</div>
+          <h2 class="section-title">Complete sushi-catering<br /><em>op maat</em></h2>
+          <ul class="expect-list">
+            <li>Verse sushi geleverd op locatie</li>
+            <li>Maten voor 2 tot 250 personen</li>
+            <li>Keuze uit eigen samenstelling</li>
+            <li>Sojasaus, wasabi en gember inbegrepen</li>
+            <li>Traditionele boot- of brugpresentatie</li>
+            <li>Wij leveren</li>
+            <li>Wij bereiden vers</li>
+            <li>Verse ingrediënten</li>
+            <li>Wij halen artikelen op</li>
+            <li>Wij staan open voor alles</li>
+          </ul>
+        </div>
+        <div class="catering-expect-imgs reveal-right">
+          <div class="catering-img-stack">
+            <img src="images/IMG_1191-1024x886.jpg" alt="Catering sushi" loading="lazy" class="cimg cimg-top" />
+            <img src="images/IMG_1178-1024x894.jpg" alt="Catering arrangement" loading="lazy" class="cimg cimg-bot" />
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 presentation styles -->
+      <div class="section-header" style="margin-top:80px">
+        <div class="section-eyebrow reveal-up">Presentatiestijlen</div>
+        <h2 class="section-title reveal-up delay-1">Vier manieren om<br /><em>te imponeren</em></h2>
+      </div>
+      <div class="catering-styles-grid">
+
+        <div class="catering-style-card reveal-up">
+          <div class="catering-style-img">
+            <img src="images/IMG_1035-1024x911.jpg" alt="Luxe sushi boot" loading="lazy" />
+          </div>
+          <div class="catering-style-body">
+            <div class="style-number">01</div>
+            <h3>Luxe houten sushi-boot/brug</h3>
+            <p class="style-tagline">"Een echte showstopper!"</p>
+            <p>Ideaal voor grote groepen. De sushi boot of brug is een prachtig middelpunt op ieder evenement — visueel indrukwekkend en heerlijk tegelijk.</p>
+            <a href="#sushi-boot" class="catering-link">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </div>
+
+        <div class="catering-style-card reveal-up delay-1">
+          <div class="catering-style-img">
+            <img src="images/IMG_0133-1024x548.jpg" alt="Opgemaakte tafel" loading="lazy" />
+          </div>
+          <div class="catering-style-body">
+            <div class="style-number">02</div>
+            <h3>Opgemaakte tafel/etagères</h3>
+            <p class="style-tagline">"Een echte visuele beleving"</p>
+            <p>Een volledig gedekte en versierde sushi-tafel met Japanse decoratie en etagères — het perfecte statement voor jouw evenement.</p>
+            <a href="#contact" class="catering-link">Aanvragen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </div>
+
+        <div class="catering-style-card reveal-up delay-2">
+          <div class="catering-style-img">
+            <img src="images/IMG_8804-576x1024.jpg" alt="Live cooking" loading="lazy" />
+          </div>
+          <div class="catering-style-body">
+            <div class="style-number">03</div>
+            <h3>Live cooking op locatie</h3>
+            <p class="style-tagline">Interactief & spectaculair</p>
+            <p>Onze chef-koks bereiden live sushi op jouw locatie. Een interactieve show die jouw gasten nooit vergeten — vers bereid op het moment zelf.</p>
+            <a href="#contact" class="catering-link">Aanvragen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </div>
+
+        <div class="catering-style-card reveal-up delay-3">
+          <div class="catering-style-img">
+            <img src="images/IMG_2030-576x1024.jpg" alt="Levering in bakjes" loading="lazy" />
+          </div>
+          <div class="catering-style-body">
+            <div class="style-number">04</div>
+            <h3>Levering in bakjes</h3>
+            <p class="style-tagline">Praktisch & vers</p>
+            <p>Handig verpakt in mooie bakjes — vers bereid en direct klaar om te genieten. Ideaal voor op kantoor, thuis of onderweg.</p>
+            <a href="#bestel" class="catering-link">Bestellen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Catering gallery strip -->
+      <div class="catering-gallery reveal-up">
+        <img src="images/IMG_0132-1024x555.jpg" alt="Catering" loading="lazy" />
+        <img src="images/IMG_1191-1024x886.jpg" alt="Catering" loading="lazy" />
+        <img src="images/IMG_1178-1024x894.jpg" alt="Catering" loading="lazy" />
+        <img src="images/IMG_1035-1024x911.jpg" alt="Catering" loading="lazy" />
+      </div>
+
+      <!-- Catering CTA -->
+      <div class="section-cta reveal-up">
+        <h3>Stuur een appje of een mailtje met uw wensen.<br />Wij nemen contact met u op om alles af te stemmen.</h3>
+        <div class="cta-btns">
+          <a href="https://wa.me/31619458006" target="_blank" rel="noopener" class="btn-primary">
+            WhatsApp ons
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+          </a>
+          <a href="mailto:info@smulshi.nl" class="btn-ghost">info@smulshi.nl</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 4 — SUSHI BOOT / BRUG
+  ══════════════════════════════════════════ -->
+  <section id="sushi-boot" class="boot-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow reveal-up">Luxe sushi catering door heel Zuid-Holland</div>
+        <h2 class="section-title reveal-up delay-1">Sushi boot<br /><em>en/of brug</em></h2>
+        <p class="section-sub reveal-up delay-2">
+          Exclusieve Sushi Boot &amp; Sushi Brug – Luxe sushi catering door heel Zuid-Holland
+        </p>
+      </div>
+
+      <div class="boot-cards">
+
+        <!-- BOOT -->
+        <div class="boot-card reveal-left">
+          <div class="boot-card-img">
+            <img src="images/IMG_1735-1-1024x646.jpg" alt="De Sushi Boot" loading="lazy" />
+            <div class="boot-img-label">🚤 De Sushi Boot</div>
+          </div>
+          <div class="boot-card-body">
+            <div class="boot-icon">🚤</div>
+            <h3>De Sushi Boot</h3>
+            <p class="boot-includes">Inhoud:</p>
+            <ul class="boot-contents">
+              <li><span>8</span> verse rollen</li>
+              <li><span>10</span> nigiri</li>
+              <li><span>2</span> hosomaki rollen</li>
+              <li><span>6</span> plakken sashimi</li>
+            </ul>
+            <p class="boot-desc">Met verse vis, groenten en fruit. Gepresenteerd in een elegante transparante presentatie — een echte showstopper voor grote groepen.</p>
+            <div class="boot-features">
+              <div class="boot-feat"><span>✦</span> Bezorging door heel Zuid-Holland</div>
+              <div class="boot-feat"><span>✦</span> Samenstelling aanpasbaar</div>
+              <div class="boot-feat"><span>✦</span> Meerdere boten mogelijk</div>
+            </div>
+            <a href="#contact" class="btn-primary">Reserveren</a>
+          </div>
+        </div>
+
+        <!-- BRUG -->
+        <div class="boot-card reveal-right">
+          <div class="boot-card-img">
+            <img src="images/IMG_1743-1024x723.jpg" alt="De Sushi Brug" loading="lazy" />
+            <div class="boot-img-label">🌉 De Sushi Brug</div>
+          </div>
+          <div class="boot-card-body">
+            <div class="boot-icon">🌉</div>
+            <h3>De Sushi Brug</h3>
+            <p class="boot-includes">Inhoud:</p>
+            <ul class="boot-contents">
+              <li><span>6</span> rollen</li>
+              <li><span>2</span> hosomaki's</li>
+              <li><span>6</span> nigiri</li>
+              <li><span>4</span> plakken sashimi</li>
+            </ul>
+            <p class="boot-desc">Perfect voor intieme gelegenheden. Een elegante brug presentatie voor kleinere gezelschappen die toch de premium sushi-ervaring willen.</p>
+            <div class="boot-features">
+              <div class="boot-feat"><span>✦</span> Ideaal voor intiem gezelschap</div>
+              <div class="boot-feat"><span>✦</span> Samenstelling aanpasbaar</div>
+              <div class="boot-feat"><span>✦</span> Bezorging door heel Zuid-Holland</div>
+            </div>
+            <a href="#contact" class="btn-primary">Reserveren</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Properties -->
+      <div class="boot-props">
+        <div class="boot-prop reveal-up">
+          <div class="prop-icon">💫</div>
+          <h4>Verse, halal &amp; alcoholvrij</h4>
+          <p>Al onze sushi wordt bereid met verse dagelijkse ingrediënten. Halal vlees en alcoholvrije bereiding — voor iedereen.</p>
+        </div>
+        <div class="boot-prop reveal-up delay-1">
+          <div class="prop-icon">🥢</div>
+          <h4>Voor elk moment</h4>
+          <p>Casual avond, game night, romantisch diner, feestdag, jubileum, verjaardag of bedrijfsevenement — wij passen ons aan.</p>
+        </div>
+        <div class="boot-prop reveal-up delay-2">
+          <div class="prop-icon">✨</div>
+          <h4>Bestel jouw sushi-ervaring</h4>
+          <p>Stuur een appje of mailtje met jouw wensen. Wij stemmen alles af en zorgen voor een onvergetelijke sushi-beleving.</p>
+        </div>
+      </div>
+
+      <!-- Moments grid -->
+      <div class="boot-moments reveal-up">
+        <h3>Perfect voor…</h3>
+        <div class="moments-chips">
+          <span>Casual avond</span>
+          <span>Game night</span>
+          <span>Romantisch diner</span>
+          <span>Feestdagen</span>
+          <span>Verjaardagen</span>
+          <span>Jubileums</span>
+          <span>Bedrijfsevenementen</span>
+          <span>Bruiloften</span>
+          <span>Borrels</span>
+        </div>
+      </div>
+
+      <div class="section-cta reveal-up">
+        <a href="#contact" class="btn-primary btn-large">Reserveer jouw boot of brug</a>
+        <a href="https://smulshi.nl/sushi-boot-brug/" target="_blank" rel="noopener" class="btn-ghost btn-large">Bestel direct online</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 5 — OVER ONS
+  ══════════════════════════════════════════ -->
+  <section id="overons" class="overons-section">
+    <div class="container">
+
+      <div class="overons-hero-text">
+        <div class="section-eyebrow reveal-up">Over ons</div>
+        <h2 class="section-title reveal-up delay-1">
+          Gestart in 2025, spiksplinternieuw<br /><em>en vol met enthousiasme en ideeën.</em>
+        </h2>
+      </div>
+
+      <div class="overons-intro-grid">
+        <div class="overons-intro-text reveal-left">
+          <div class="overons-block">
+            <h3>🍣 Over Smulshi</h3>
+            <p>Bij Smulshi draait alles om: gemakkelijk, begrijpelijk en verrukkelijk eten. Wij bieden verse sushi, pokébowls, catering voor evenementen en de Sushi Boot Brug door heel Zuid-Holland.</p>
+          </div>
+          <div class="overons-block">
+            <h3>🥢 Van snelle hap tot feestelijke catering</h3>
+            <p>Of je nu snel iets lekkers wilt bestellen of een volledig verzorgd sushi-evenement zoekt — Smulshi staat voor je klaar. Van pokébowl tot live cooking en van kleine box tot complete sushi boot.</p>
+          </div>
+          <div class="overons-pillars">
+            <div class="pillar">
+              <div class="pillar-word">Gemakkelijk</div>
+              <div class="pillar-desc">Eenvoudig bestellen en ophalen</div>
+            </div>
+            <div class="pillar">
+              <div class="pillar-word">Begrijpelijk</div>
+              <div class="pillar-desc">Eerlijke prijzen, duidelijke keuzes</div>
+            </div>
+            <div class="pillar">
+              <div class="pillar-word">Verrukkelijk</div>
+              <div class="pillar-desc">Kwaliteit bereid met passie</div>
+            </div>
+          </div>
+        </div>
+        <div class="overons-intro-img reveal-right">
+          <img src="images/IMG_1737-1-1024x719.jpeg" alt="Smulshi sushi" loading="lazy" />
+          <div class="overons-img-badge">
+            <span>🏆</span>
+            <div>
+              <strong>Opgericht 2025</strong>
+              <small>Spiksplinternieuw</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ons verhaal -->
+      <div class="verhaal-section">
+        <div class="verhaal-img reveal-left">
+          <img src="images/IMG_9966.jpg" alt="Smulshi" loading="lazy" />
+        </div>
+        <div class="verhaal-text reveal-right">
+          <h3>👨‍🍳 Ons verhaal</h3>
+          <p>Smulshi is opgericht in januari 2025 door Mike Twigt. Als eerste maakten wij exclusieve Kesbeke sushi — spiksplinternieuw en vol enthousiasme. Wij brachten geïmporteerde expert-chefs aan boord en bouwden een enthousiast team van sushikokkens, bezorgers en voedselliefhebbers.</p>
+          <p>Ons doel is simpel: de beste sushi-ervaring bieden aan iedereen in Zuid-Holland — of dat nu een snelle pokébowl op kantoor is of een spectaculair catering-arrangement voor een groot evenement.</p>
+
+          <h3 style="margin-top:32px">💡 Waar wij in geloven</h3>
+          <p>Wij geloven dat goed eten niet ingewikkeld hoeft te zijn. Gemakkelijk bestellen, begrijpelijke prijzen en verrukkelijk resultaat — dat is de Smulshi belofte.</p>
+        </div>
+      </div>
+
+      <!-- Team -->
+      <div class="team-section">
+        <div class="section-header">
+          <div class="section-eyebrow reveal-up">👥 Ons team</div>
+          <h2 class="section-title reveal-up delay-1">Ons Professioneel<br /><em>Team</em></h2>
+        </div>
+        <div class="team-grid">
+          <div class="team-card reveal-up">
+            <div class="team-img">
+              <img src="images/IMG_0394-3-899x1024.jpg" alt="Mike Twigt" loading="lazy" />
+            </div>
+            <div class="team-body">
+              <h4>Mike Twigt</h4>
+              <span class="team-role">Eigenaar</span>
+              <p>Beschikt over uitgebreide ervaring in de foodmarket branche en deelt zijn inzichten met enthousiasme met het hele team.</p>
+            </div>
+          </div>
+          <div class="team-card reveal-up delay-1">
+            <div class="team-img">
+              <img src="images/IMG_0450-910x1024.jpg" alt="Louise Emmerich" loading="lazy" />
+            </div>
+            <div class="team-body">
+              <h4>Louise Emmerich</h4>
+              <span class="team-role">Bedrijfsleider en Chefkok</span>
+              <p>Bekend om haar innovatieve ideeën en organisatorische vaardigheden. Drijvende kracht achter de Smulshi kwaliteit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ontdek het zelf / Vacatures link -->
+      <div class="overons-cta reveal-up">
+        <div class="overons-cta-inner">
+          <h3>🍱 Ontdek het zelf</h3>
+          <p>Proef onze sushi, bestel een pokébowl of vraag een catering arrangement aan. Smulshi staat elke dag voor je klaar.</p>
+          <div class="cta-btns">
+            <a href="#bestel" class="btn-primary">Bestel nu</a>
+            <a href="#vacatures" class="btn-ghost">✨ Kom werken bij Smulshi!</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 6 — CONTACT
+  ══════════════════════════════════════════ -->
+  <section id="contact" class="contact-section">
+    <div class="contact-header-img">
+      <img src="images/image-8.jpg" alt="Contact Smulshi" loading="lazy" />
+      <div class="contact-header-overlay"></div>
+      <div class="contact-header-text">
+        <div class="section-eyebrow" style="color:#c9a96e">Smulshi</div>
+        <h2>📞 Contactpagina</h2>
+        <p>We staan voor je klaar!</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Left: info -->
+        <div class="contact-info-col">
+          <div class="contact-block reveal-up">
+            <h3>📇 Contactgegevens</h3>
+            <div class="contact-details">
+              <a href="tel:0619458006" class="contact-item">
+                <div class="contact-icon">📞</div>
+                <div>
+                  <strong>Telefoon</strong>
+                  <span>06 19 45 80 06</span>
+                </div>
+              </a>
+              <a href="mailto:info@smulshi.nl" class="contact-item">
+                <div class="contact-icon">✉️</div>
+                <div>
+                  <strong>E-mail</strong>
+                  <span>info@smulshi.nl</span>
+                </div>
+              </a>
+              <a href="https://wa.me/31619458006" target="_blank" rel="noopener" class="contact-item">
+                <div class="contact-icon">💬</div>
+                <div>
+                  <strong>WhatsApp</strong>
+                  <span>Stuur een appje</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-block reveal-up delay-1">
+            <h3>📍 Afhaallocaties</h3>
+            <div class="pickup-list">
+              <div class="pickup-item">
+                <div class="pickup-store">Jumbo</div>
+                <div class="pickup-addr">Jacob van den Eyndestraat 14, 2274 VZ Voorburg</div>
+              </div>
+              <div class="pickup-item">
+                <div class="pickup-store">SPAR</div>
+                <div class="pickup-addr">Westvest 1, 2611 AX Delft</div>
+              </div>
+              <div class="pickup-item">
+                <div class="pickup-store">PLUS</div>
+                <div class="pickup-addr">Prinses Irenelaan 330, 2285 GD Rijswijk</div>
+              </div>
+              <div class="pickup-item">
+                <div class="pickup-store">SPAR</div>
+                <div class="pickup-addr">Voorschoterlaan 10, 3062 KN Rotterdam</div>
+              </div>
+              <div class="pickup-item">
+                <div class="pickup-store">SPAR</div>
+                <div class="pickup-addr">Stationsplein 4, 3112 HJ Schiedam</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-block reveal-up delay-2">
+            <h3>🤝 Volg ons</h3>
+            <div class="social-links">
+              <a href="https://www.instagram.com/smulshi" target="_blank" rel="noopener" class="social-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                Instagram
+              </a>
+              <a href="https://www.facebook.com/share/1DNHRb8Kqj/" target="_blank" rel="noopener" class="social-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                Facebook
+              </a>
+              <a href="https://www.linkedin.com/company/107742023/" target="_blank" rel="noopener" class="social-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                LinkedIn
+              </a>
+              <a href="https://www.tiktok.com/@smulshi" target="_blank" rel="noopener" class="social-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12a4 4 0 104 4V4a5 5 0 005 5"/></svg>
+                TikTok
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: form + FAQ -->
+        <div class="contact-right-col">
+          <form class="contact-form reveal-right" id="contactForm">
+            <h3>Stuur ons een bericht</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="c-name">Naam</label>
+                <input type="text" id="c-name" name="naam" placeholder="Jouw naam" required />
+              </div>
+              <div class="form-group">
+                <label for="c-email">E-mail</label>
+                <input type="email" id="c-email" name="email" placeholder="info@jou.nl" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="c-subject">Onderwerp</label>
+              <select id="c-subject" name="onderwerp">
+                <option>Bestelling / Informatie</option>
+                <option>Cateringopdracht</option>
+                <option>Sushi boot of brug</option>
+                <option>Live cooking</option>
+                <option>Grote bestelling (6+ personen)</option>
+                <option>Overig</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="c-message">Bericht</label>
+              <textarea id="c-message" name="bericht" rows="5" placeholder="Vertel ons over jouw wensen..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full">
+              Verstuur bericht
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+          </form>
+
+          <!-- FAQ -->
+          <div class="faq-section reveal-up">
+            <h3>❓ Veelgestelde vragen</h3>
+            <div class="faq-list" id="faqList">
+
+              <div class="faq-item">
+                <button class="faq-q">Hoe bestel ik op Smulshi?<span class="faq-arrow">+</span></button>
+                <div class="faq-a">
+                  <p>Via de bestelknop selecteert u de producten die u lekker vindt. Wanneer u klaar bent, klikt u op de winkelwagen en doorloopt u de stappen. Vergeet niet uw e-mailadres in te vullen; via dit adres ontvangt u de bevestiging en kunt u uw bestelling ophalen.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-q">Hoe plaats ik een cateringopdracht, sushi boot of grote bestelling (6+ personen)?<span class="faq-arrow">+</span></button>
+                <div class="faq-a">
+                  <p>Stuur een appje of een mailtje met uw wensen. Wij nemen contact met u op om alles af te stemmen.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-q">Wat zijn de betaalopties?<span class="faq-arrow">+</span></button>
+                <div class="faq-a">
+                  <p>Online bestelling: neem de bevestigingsmail mee naar de afhaallocatie en reken daar af. Catering: betaling wordt besproken in onderling overleg.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-q">Hoe weet ik of mijn bestelling gelukt is?<span class="faq-arrow">+</span></button>
+                <div class="faq-a">
+                  <p>U ontvangt een bevestigingsmail op het door u opgegeven e-mailadres. Heeft u deze niet ontvangen? Neem dan contact met ons op via de bovenstaande gegevens.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 7 — VACATURES
+  ══════════════════════════════════════════ -->
+  <section id="vacatures" class="vacatures-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow reveal-up">Word onderdeel van ons team</div>
+        <h2 class="section-title reveal-up delay-1">Vacatures<br /><em>bij Smulshi</em></h2>
+        <p class="section-sub reveal-up delay-2">
+          Word vandaag nog onderdeel van ons toegewijde team. Ontdek diverse kansen binnen Smulshi, met een focus op functies en doorgroeimogelijkheden.
+        </p>
+      </div>
+
+      <div class="jobs-grid">
+
+        <div class="job-card reveal-up">
+          <div class="job-header">
+            <div class="job-tags">
+              <span class="job-tag">Parttime</span>
+              <span class="job-tag">Bleiswijk</span>
+            </div>
+            <h3>Hulpkracht Sushi</h3>
+            <p class="job-quote">"Wil jij ervaring opdoen in de keuken en deel uitmaken van een gezellig team?"</p>
+          </div>
+          <div class="job-body">
+            <div class="job-col">
+              <h4>Wat ga je doen?</h4>
+              <ul>
+                <li>Voorbereiden van ingrediënten en ondersteunen bij het maken van gerechten</li>
+                <li>Assisteren bij het productieproces en het klaarzetten van bestellingen</li>
+                <li>Samenwerken met collega's om een vlotte service te garanderen</li>
+                <li>Helpen bij het schoonhouden van de keuken en werkruimtes</li>
+              </ul>
+            </div>
+            <div class="job-col">
+              <h4>Wie ben jij?</h4>
+              <ul>
+                <li>Positieve en leergierige instelling</li>
+                <li>Netjes werken met oog voor hygiëne</li>
+                <li>Goed samenwerken en flexibel inzetbaar</li>
+                <li>Horeca-ervaring mooi meegenomen, geen vereiste</li>
+              </ul>
+            </div>
+            <div class="job-col">
+              <h4>Wat bieden wij?</h4>
+              <ul>
+                <li>Parttime functie met flexibele werktijden</li>
+                <li>Doorgroeimogelijkheden naar zelfstandig werkend kok</li>
+                <li>Marktconform salaris volgens Horeca-cao</li>
+                <li>Gezellige werkomgeving met enthousiast team</li>
+              </ul>
+            </div>
+          </div>
+          <button class="job-apply-btn" data-job="Hulpkracht Sushi">Solliciteer nu</button>
+        </div>
+
+        <div class="job-card reveal-up delay-1">
+          <div class="job-header">
+            <div class="job-tags">
+              <span class="job-tag">Fulltime</span>
+              <span class="job-tag">Bleiswijk</span>
+            </div>
+            <h3>Sushikok / Zelfstandig Werkend Kok</h3>
+            <p class="job-quote">"Word onderdeel van ons toegewijde team en breng jouw passie voor sushi tot leven!"</p>
+          </div>
+          <div class="job-body">
+            <div class="job-col">
+              <h4>Wat ga je doen?</h4>
+              <ul>
+                <li>Bereiden van sushi en Japanse specialiteiten volgens kwaliteitsstandaarden</li>
+                <li>Hygiëne en voedselveiligheid in de keuken</li>
+                <li>Meedenken over nieuwe gerechten en creatieve presentaties</li>
+                <li>Samenwerken met collega's</li>
+              </ul>
+            </div>
+            <div class="job-col">
+              <h4>Wie ben jij?</h4>
+              <ul>
+                <li>Ervaring als kok (sushi-ervaring is een pré)</li>
+                <li>Nauwkeurig met oog voor detail</li>
+                <li>Stressbestendig en goed teamspeler</li>
+                <li>Passie voor Japanse keuken</li>
+              </ul>
+            </div>
+            <div class="job-col">
+              <h4>Wat bieden wij?</h4>
+              <ul>
+                <li>Fulltime functie in groeiend sushi-bedrijf</li>
+                <li>Doorgroeimogelijkheden</li>
+                <li>Marktconform salaris volgens Horeca-cao</li>
+                <li>Gezellige en inspirerende werkomgeving</li>
+              </ul>
+            </div>
+          </div>
+          <button class="job-apply-btn" data-job="Sushikok">Solliciteer nu</button>
+        </div>
+
+        <div class="job-card reveal-up delay-2">
+          <div class="job-header">
+            <div class="job-tags">
+              <span class="job-tag">Fulltime</span>
+              <span class="job-tag">Bleiswijk</span>
+            </div>
+            <h3>Sous-Chefkok</h3>
+            <p class="job-quote">"Ben jij klaar om je culinaire talenten naar een hoger niveau te tillen?"</p>
+          </div>
+          <div class="job-body">
+            <div class="job-col">
+              <h4>Wat ga je doen?</h4>
+              <ul>
+                <li>Ondersteunen van chefkok bij innovatieve gerechten</li>
+                <li>Bewaken van kwaliteit, hygiëne en voedselveiligheid</li>
+                <li>Aansturen keukenpersoneel</li>
+                <li>Meedenken over menu's en presentaties</li>
+                <li>Voorraadbeheer</li>
+              </ul>
+            </div>
+            <div class="job-col">
+              <h4>Wie ben jij?</h4>
+              <ul>
+                <li>Ervaring als zelfstandig werkend kok</li>
+                <li>Stressbestendig met leidinggevingsvaardigheid</li>
+                <li>Oog voor detail</li>
+                <li>Passie voor Japanse keuken</li>
+                <li>Teamspeler die motiveert</li>
+              </ul>
+            </div>
+            <div class="job-col">
+              <h4>Wat bieden wij?</h4>
+              <ul>
+                <li>Fulltime functie in groeiend sushi-bedrijf</li>
+                <li>Doorgroeimogelijkheden naar chefkok of bedrijfsleider</li>
+                <li>Marktconform salaris volgens Horeca-cao</li>
+                <li>Inspirerende werkomgeving</li>
+                <li>Ruimte voor creativiteit</li>
+              </ul>
+            </div>
+          </div>
+          <button class="job-apply-btn" data-job="Sous-Chefkok">Solliciteer nu</button>
+        </div>
+
+      </div>
+
+      <!-- Sollicitatie formulier -->
+      <div class="sollicitatie-form-wrap reveal-up" id="sollicitatieWrap" style="display:none">
+        <h3 id="sollicitatieTitle">Solliciteer als …</h3>
+        <form class="sollicitatie-form" id="sollicitatieForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Naam</label>
+              <input type="text" name="naam" placeholder="Volledige naam" required />
+            </div>
+            <div class="form-group">
+              <label>E-mail</label>
+              <input type="email" name="email" placeholder="jouw@email.nl" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Telefoonnummer</label>
+            <input type="tel" name="telefoon" placeholder="06 12 34 56 78" />
+          </div>
+          <div class="form-group">
+            <label>Motivatie</label>
+            <textarea name="motivatie" rows="5" placeholder="Waarom wil je bij Smulshi werken?" required></textarea>
+          </div>
+          <div class="form-group">
+            <label>Upload je CV</label>
+            <input type="file" name="cv" accept=".pdf,.doc,.docx" />
+          </div>
+          <div class="form-row form-row-btns">
+            <button type="submit" class="btn-primary">Verstuur sollicitatie</button>
+            <button type="button" class="btn-ghost" id="cancelSolBtn">Annuleren</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Footer ──────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="images/Logo_Smulshi_Kleur-scaled.jpg" alt="Smulshi" class="footer-logo" />
+          <p>Gemakkelijk, begrijpelijk en verrukkelijk.<br />Verse sushi &amp; pokébowls door heel Zuid-Holland.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/smulshi" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://www.facebook.com/share/1DNHRb8Kqj/" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/company/107742023/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Navigatie</h4>
+            <a href="#home">Home</a>
+            <a href="#bestel">Bestel</a>
+            <a href="#catering">Catering</a>
+            <a href="#sushi-boot">Sushi boot/brug</a>
+            <a href="#overons">Over ons</a>
+            <a href="#contact">Contact</a>
+            <a href="#vacatures">Vacatures</a>
+          </div>
+          <div class="footer-col">
+            <h4>Diensten</h4>
+            <a href="#sushi-boot">Sushi Boot</a>
+            <a href="#sushi-boot">Sushi Brug</a>
+            <a href="#catering">Live Cooking</a>
+            <a href="#catering">Catering op maat</a>
+            <a href="#catering">Levering in bakjes</a>
+            <a href="#bestel">Online Bestellen</a>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <a href="tel:0619458006">06 19 45 80 06</a>
+            <a href="mailto:info@smulshi.nl">info@smulshi.nl</a>
+            <a href="https://wa.me/31619458006" target="_blank" rel="noopener">WhatsApp</a>
+            <a href="#contact">Afhaallocaties</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Smulshi. Alle rechten voorbehouden.</p>
+        <p>Gemaakt met <span style="color:#c9a96e">♥</span> voor sushi liefhebbers</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
